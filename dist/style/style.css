@@ -1,0 +1,524 @@
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] ::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+/* WEBFONTS */
+@font-face {
+  font-family: "codeconf";
+  src: url("webfonts/codeconf-all/fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "codeconf" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hour:before {
+  content: "\e900";
+}
+
+.icon-pin:before {
+  content: "\e901";
+}
+
+.icon-burger:before {
+  content: "\e93e";
+}
+
+.icon-schedule:before {
+  content: "\e93f";
+}
+
+.icon-loop:before {
+  content: "\e940";
+  color: #FF4613;
+}
+
+.icon-contact:before {
+  content: "\e941";
+}
+
+.icon-event:before {
+  content: "\e942";
+}
+
+.icon-home:before {
+  content: "\e943";
+  color: #FF4613;
+}
+
+.icon-card:before {
+  content: "\e944";
+}
+
+.icon-paypal:before {
+  content: "\e945";
+}
+
+.icon-tw:before {
+  content: "\e946";
+}
+
+.icon-slack:before {
+  content: "\e947";
+}
+
+.icon-heart_full:before {
+  content: "\e948";
+}
+
+.icon-heart_line:before {
+  content: "\e949";
+}
+
+.icon-square_full:before {
+  content: "\e94a";
+}
+
+.icon-square_line:before {
+  content: "\e94b";
+}
+
+.icon-spade_full:before {
+  content: "\e94c";
+}
+
+.icon-spade_line:before {
+  content: "\e94d";
+}
+
+.icon-clover_full:before {
+  content: "\e94e";
+}
+
+.icon-clover_line:before {
+  content: "\e94f";
+}
+
+/* museo */
+@font-face {
+  font-family: "leaguespartan";
+  src: url("webfonts/leaguespartan/LeagueSpartanVariable.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-variation-settings: "wght" 200, "wght" 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("webfonts/museo/museo300.woff2") format("woff2"), url("webfonts/museo/museo300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("webfonts/museo/museo500.woff2") format("woff2"), url("webfonts/museo/museo500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("webfonts/museo/museo700.woff2") format("woff2"), url("webfonts/museo/museo700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "maven";
+  src: url("webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 400 900;
+  font-variation-settings: "wght" 400, "wght" 900;
+  font-style: normal;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+.logo {
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+
+nav {
+  font-family: "leaguespartan";
+  background-color: #F9F9F9;
+  color: #343237;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: large;
+  list-style-type: none;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  z-index: 1;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.category {
+  text-decoration: none;
+  color: initial;
+}
+
+.teaser-image {
+  display: grid;
+  border: 1px solid #888;
+  max-width: 80rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: #7A49F2;
+}
+.teaser-image * {
+  border: 1px solid #888;
+}
+.teaser-image img {
+  position: relative;
+  z-index: 2;
+  -webkit-margin-before: -3rem;
+          margin-block-start: -3rem;
+  width: 100%;
+  grid-column: 3/6;
+  grid-row: span 2;
+  pointer-events: none;
+  align-self: end;
+}
+
+.teaser {
+  display: grid;
+  font-family: "museo";
+  color: #FFFFFF;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: #7A49F2;
+}
+
+.teaser__text {
+  font-family: "leaguespartan";
+  font-weight: 300;
+  margin-top: -1.2rem;
+}
+
+.teaser img {
+  position: relative;
+  z-index: 2;
+  -webkit-margin-before: -3rem;
+          margin-block-start: -3rem;
+  width: 85%;
+  grid-column: 3/6;
+  grid-row: span 2;
+  pointer-events: none;
+  align-self: end;
+}
+
+.teaser h1, .teaser p {
+  grid-column: 6/11;
+}
+
+.teaser h1 {
+  align-self: end;
+}
+
+.teaser p {
+  align-self: start;
+}
+
+.first-lign {
+  font-family: "leaguespartan";
+  font-weight: 300;
+  color: #51456F;
+  padding: 2rem;
+  background-color: #F9F9F9;
+}
+
+/*MAIN aka CARDS*/
+main {
+  background-color: #F9F9F9;
+}
+
+.card {
+  background-color: #F9F9F9;
+  display: inline-block;
+  /*border:solid;*/
+  margin: 25px;
+  height: 340px;
+  overflow: hidden;
+  width: 250px;
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.card__img {
+  height: 250px;
+  width: 250px;
+}
+
+.card__orator {
+  font-family: "museo";
+  font-weight: 300;
+  font-size: large;
+  color: #51456F;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.card__location {
+  font-family: "leaguespartan";
+  font-weight: 300;
+  color: #A39DB3;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.card--off {
+  display: none;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #343237;
+  color: #FFFFFF;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

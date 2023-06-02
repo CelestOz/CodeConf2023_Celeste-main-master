@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/importedstyle.css">
+  <script type="text/javascript" src="cardEffect.js"></script>
+  <title>Code Conf speakers</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <nav>
+      <img src="image/logos/logo2023.svg" alt="LogoCodeConf" class="logo">
+      <a href="#" class="category">Event</a>|
+      <a href="#" class="category">Speakers</a>|
+      <a href="#" class="category">Team</a>|
+      <a href="#" class="category">Contact</a>
+      <icon src="#" alt="calendar" class="icon-schedule"><a href="#" class="category"> Schedule</a>
+      <icon src="#" alt="search" class="icon-loop">
+    </nav>
+
+    <div class="teaser">
+      <img src="https://assets.codepen.io/87353/presents%403x.png" alt="prs">
+      <h1>Speaker Edition 2023</h1>
+      <p class="teaser__text">Discover the speakers and the topics or suggest your own topic for our next event</p>
+    </div>
+
+  </header>
+
+
+  <div class="first-lign">
+    <icon class="icon-home"></i>
+    <span class="text">| Speakers</span>
+  </div>
+
+  <!-- CARDS ;
+  Card--on : Recto de la carte, première phase visible
+  XX : Phase de transition avec "more informations"
+  Card--off : Verso après avoir cliquer sur la phase de transition -->
+
+
+  <main>
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img"  src="image/SpeakersPicture/chris@3x.jpg" alt="Sara Soueidan">
+        <h2 class="card__orator">Chris<br>Coyier</strong></h2>
+        <p class="card__location">Milwaukee, WI</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Chris Coyier</strong></h2>
+        <h3 class="card__topic">The All-Powerful Front-End Developer</h3>
+        <p class="card__description">Without servers, we'd have no way to share our creations with the world</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">09:30 am</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/sara@3x.jpg" alt="Sara Soueidan">
+        <h2 class="card__orator">Sara<br>Soueidan</strong></h2>
+        <p class="card__location">Lebanon</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Sara Soueidan</strong></h2>
+        <h3 class="card__topic">Going Offline</h3>
+        <p class="card__description">You can re-visit my Web site even when you’re not connected to the Internet</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">10:15 am</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/eric@3x.jpg" alt="Eric Mayer">
+        <h2 class="card__orator">Eric<br>Mayer</strong></h2>
+        <p class="card__location">Cleveland, OH</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Eric Mayer</strong></h2>
+        <h3 class="card__topic">Faux Grid Tracks</h3>
+        <p class="card__description">Is it possible to style the rows and columns of a [CSS] grid—the grid itself?</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">04:00 pm</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/lea@3x.jpg" alt="Lea Verou">
+        <h2 class="card__orator">Lea<br>Verou</strong></h2>
+        <p class="card__location">Cambridge, MA</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Lea Verou</strong></h2>
+        <h3 class="card__topic">Mavo</h3>
+        <p class="card__description">New approachable way to create Web applications</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">04:00 pm</time>
+            <span class="card__room">R2</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/shirley@3x.jpg" alt="Shirley Wu">
+        <h2 class="card__orator">Shirley<br>Wu</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Shirley Wu</strong></h2>
+        <h3 class="card__topic">655 Frustrations Doing Data Visualization</h3>
+        <p class="card__description">Visualization teams spend more time visualizing than those on embedded teams</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">09:30 am</time>
+            <span class="card__room">R2</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/luke@3x.jpg" alt="Luke Wroblewski">
+        <h2 class="card__orator">Luke<br>Wroblewski</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Luke Wroblewski</strong></h2>
+        <h3 class="card__topic">The Way of the Web</h3>
+        <p class="card__description">Science fiction is not about predicting the future, but about what we need to have a future</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">11:30am</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/nico@3x.jpg" alt="Nicolas Gallagher">
+        <h2 class="card__orator">Nicolas<br>Gallagher</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Nicolas Gallagher</strong></h2>
+        <h3 class="card__topic">Making SVG icon libraries for React apps</h3>
+        <p class="card__description">Using SVG is currently the best way to create icon libraries for apps</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">02:00 pm</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/rachel@3x.jpg" alt="Rachel Andrew">
+        <h2 class="card__orator">Rachel<br>Andrew</strong></h2>
+        <p class="card__location">Bristol, UK</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Rachel Andrew</strong></h2>
+        <h3 class="card__topic">Making Things Better</h3>
+        <p class="card__description">Redefining the Technical Possibilities of CSS</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">03:00 pm</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/stephen@3x.jpg" alt="Stephen Hay">
+        <h2 class="card__orator">Stephen<br>Hay</strong></h2>
+        <p class="card__location">Leeuwarden, NL</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Stephen Hay</strong></h2>
+        <h3 class="card__topic">Zero interface thinking</h3>
+        <p class="card__description">Everything we introduce has the potential to ruin everything. Ask: Is this absolutely necessary?</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">05:00 pm</time>
+            <span class="card__room">R1</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/paul@3x.jpg" alt="Paul Irish">
+        <h2 class="card__orator">Paul<br>Irish</strong></h2>
+        <p class="card__location">Palo Alto, CA</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Paul Irish</strong></h2>
+        <h3 class="card__topic">Developer Tooling, lighthouse</h3>
+        <p class="card__description">Auditing, performance metrics, and best practices for Progressive Web Apps</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">10:30 am</time>
+            <span class="card__room">R2</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/nicole@3x.jpg" alt="Nicole Sullivan">
+        <h2 class="card__orator">Nicole<br>Sullivan</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Nicole Sullivan</strong></h2>
+        <h3 class="card__topic">OOCSS code standards</h3>
+        <p class="card__description">Code conventions are important for the long-term maintainability of code</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">11:30 am</time>
+            <span class="card__room">R2</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" onclick="cardSwap(this)">
+      <section class="card--on">
+        <img class="card__img" src="image/SpeakersPicture/brad@3x.jpg" alt="Brad Frost">
+        <h2 class="card__orator">Brad<br>Frost</strong></h2>
+        <p class="card__location">Pittsburgh, PA.</p>
+      </section>
+      <section class="card--off" >
+        <h2 class="card__orator">Brad Frost</strong></h2>
+        <h3 class="card__topic">Atomic Design</h3>
+        <p class="card__description">We can construct design systems in a more methodical way</p>
+        <div class="card__btn">
+          <div class="card__meeting">
+            <time class="card__time">02:00 pm</time>
+            <span class="card__room">R2</span>
+          </div>
+          <a href="#" class="card__link">About</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Formulaire à partir d'ici -->
+
+  <div class="registerForm">
+
+    <div class="form">
+      <h2 class="title">BECOME SPEAKER</h2>
+      <h3 class="subtitle">Do you have a topic that you like?</h3>
+      <p class="description">Submit it for the next event by filling out the form below. Do not forget to specify the
+        subject and the related keywords.</p>
+      <form action="submit_form.php" method="post">
+        <div class="divInput">
+          <input placeholder="Name*" type="text" id="name" name="name" required>
+          <input placeholder="Mail*" type="email" id="email" name="email" required>
+        </div>
+
+        <div class="divInput">
+          <input placeholder="Your Subject*" type="text" id="subject" name="subject" required>
+          <input placeholder="Keywords*" type="text" id="keywords" name="keywords" required>
+        </div>
+        <div class="container">
+          <textarea placeholder="Short details" id="details" name="details"></textarea>
+        </div>
+        <button type="submit">Send your subject</button>
+      </form>
+      <p>or just participate to the present event ...</p>
+    </div>
+    <button class="get-ticket">Get Ticket $199 USD</button>
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="text-section">
+      <h4 class="title">The Las Vegas Convention Center</h4>
+      <p>3150 Paradise Rd, Las Vegas, NV 89109</p>
+      <p>The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, encompasses approximately 3.2
+        million square feet with exhibit space of 2 million square feet and meeting space of nearly 250,000 square feet.
+      </p>
+      <img src="image/Pictures/lasvegas_conventioncenter.png" alt="Las Vegas">
+    </div>
+    <div class="partenariats">
+      <img src="image/logos/cisco.svg" alt="Cisco">
+      <img src="image/logos/amazon_s3.svg" alt="Amazon">
+      <img src="image/logos/nick.svg" alt="Nickelodeon">
+      <img src="image/logos/meetup.svg" alt="MeetUp">
+      <img src="image/logos/stripe.svg" alt="Stripe">
+      <img src="image/logos/mailchimp.svg" alt="MailChimp">
+    </div>
+    <div class="social-section">
+      <h4 class="title">Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="#" alt="Hashtag"></a><span class="hashtag">#codeconf2023</span>
+        <a href="#"><img src="#" alt="Twitter"></a><span class="hashtag">@codeconf2023</span>
+      </div>
+      <div class="text-blocks">
+        <div class="text-block">
+          <p>
+            Helpdesk Call-center
+            +1 702-892-0711 (speaker’s support)
+          </p>
+        </div>
+        <div class="text-block">
+          <p>
+            organised by WebeesMeetups.com
+            Copyright 2023
+          </p>
+        </div>
+      </div>
+  </footer>
+
+</body>
+</html>

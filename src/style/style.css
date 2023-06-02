@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #F9F9F9;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+
+.teaser-image {
+  display: grid;
+  border: 1px solid #888;
+  max-width: 80rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: #7A49F2;
+}
+.teaser-image * {
+  border: 1px solid #888;
+}
+.teaser-image img {
+  position: relative;
+  z-index: 2;
+  -webkit-margin-before: -3rem;
+          margin-block-start: -3rem;
+  width: 100%;
+  grid-column: 3/6;
+  grid-row: span 2;
+  pointer-events: none;
+  align-self: end;
+}
+
+.teaser {
+  background-color: #7A49F2;
+}
+
+h1, p {
+  grid-column: 6/11;
+}
+
+h1 {
+  align-self: end;
+}
+
+p {
+  align-self: start;
+}
+
+.cards {
+  background-color: #F9F9F9;
+}
+
+.form {
+  background-color: #FFFFFF;
+}
+
+footer {
+  background-color: #343237;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

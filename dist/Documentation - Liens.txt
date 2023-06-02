@@ -1,0 +1,36 @@
+Ce document servira de documentation pour l'alimentation de mon code.
+
+Couleurs :
+Couleur principale : 
+Mauve : 7A49F2
+Orange : FF4613
+Bleu/vert : 0FBDBC
+
+Gradient : 
+background: linear-gradient(90deg, rgba(122,73,242,1) 7%, rgba(255,255,255,1) 48%, rgba(15,189,188,1) 97%);
+(https://cssgradient.io/)
+Superposition : overlay
+
+Bg de la partie speakers : F9F9F9 
+Names speakers : 51456F
+Location : A39DB3
+
+Recto card : 
+Bg : FFEEE6
+Names speakers : 51456F
+Txt : 343237
+
+Formulaire :
+Bg : FFFFFF
+Txt H1 : 634AF1
+Txt other : 343237
+Btn : FF3700
+
+Paypal btn : FF3700
+
+Footer :
+Bg : 343237 
+Blue text : 00C3C5
+White text : FFFFFF
+Social media : F0E7DD
+Info text : DBC6B3

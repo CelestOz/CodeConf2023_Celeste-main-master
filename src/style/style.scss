@@ -1,0 +1,161 @@
+@import "normalize";
+@import "webfonts";
+@import "variable";
+@import "layout";
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box 
+}
+
+/*HEADER*/
+
+.logo {
+  margin-inline-end: auto;
+}
+nav {
+  font-family: 'leaguespartan';
+  background-color: #F9F9F9;
+  color: #343237;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: large;
+
+  list-style-type: none;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  z-index: 1;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.category {
+  text-decoration: none;
+  color: initial;
+}
+
+.teaser-image {
+  display: grid;
+  border: 1px solid #888;
+  max-width: 80rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: #7A49F2;
+  * {
+    border: 1px solid #888;
+  }
+  img {
+    position: relative;
+    z-index: 2;
+    margin-block-start: -3rem;
+    width: 100%;
+    grid-column: 3/6;
+    grid-row: span 2;
+    pointer-events: none;
+    align-self: end;
+  }
+}
+
+.teaser {
+  display: grid;
+  font-family: "museo";
+  color: #FFFFFF;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: #7A49F2;
+}
+
+.teaser__text {
+  font-family: 'leaguespartan';
+  font-weight: 300;
+  margin-top: -1.2rem;
+}
+
+.teaser img {
+  position: relative;
+  z-index: 2;
+  margin-block-start: -3rem;
+  width: 85%;
+  grid-column: 3/6;
+  grid-row: span 2;
+  pointer-events: none;
+  align-self: end;
+}
+.teaser h1, .teaser p {
+  grid-column: 6/11;
+}
+.teaser h1 {
+  align-self: end;
+}
+.teaser p {
+  align-self: start;
+}
+
+
+.first-lign {
+  font-family: 'leaguespartan';
+  font-weight: 300;
+  color: #51456F;
+  padding: 2rem;
+  background-color: #F9F9F9;
+}
+
+
+/*MAIN aka CARDS*/
+
+main {
+  background-color: #F9F9F9;
+}
+
+.card {
+  background-color: #F9F9F9;
+  display:inline-block;
+  /*border:solid;*/
+  margin: 25px;
+  height:340px;
+  overflow: hidden;
+  width:250px;
+  margin-block-start: 2rem;
+  margin-block-end: 0;
+}
+
+.card__img {
+  height:250px;
+  width:250px;
+}
+
+.card__orator {
+  font-family: 'museo';
+  font-weight: 300;
+  font-size: large;
+  color: #51456F;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.card__location {
+  font-family: 'leaguespartan';
+  font-weight: 300;
+  color: #A39DB3;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.card--off {
+  display:none;
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #343237;
+  color: #FFFFFF;
+  text-align: center;
+}
