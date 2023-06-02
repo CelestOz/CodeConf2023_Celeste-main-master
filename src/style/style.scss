@@ -62,6 +62,7 @@ nav {
   display: grid;
   font-family: "museo";
   color: #FFFFFF;
+  font-size: x-large;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
   background: #7A49F2;
@@ -69,12 +70,14 @@ nav {
 
 .teaser__text {
   font-family: 'leaguespartan';
-  font-weight: 300;
+  font-weight: 200;
+  font-size: x-large;
   margin-top: -1.2rem;
 }
 
 .teaser img {
   position: relative;
+  color: linear-gradient(90deg, rgba(122,73,242,1) 7%, rgba(255,255,255,1) 48%, rgba(15,189,188,1) 97%);
   z-index: 2;
   margin-block-start: -3rem;
   width: 85%;
@@ -98,7 +101,8 @@ nav {
   font-family: 'leaguespartan';
   font-weight: 300;
   color: #51456F;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
   background-color: #F9F9F9;
 }
 
@@ -124,6 +128,7 @@ main {
 .card__img {
   height:250px;
   width:250px;
+  background-color: linear-gradient(90deg, rgba(122,73,242,1) 7%, rgba(255,255,255,1) 48%, rgba(15,189,188,1) 97%);
 }
 
 .card__orator {
